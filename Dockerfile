@@ -5,7 +5,7 @@ FROM tomcat:10.1.9
 WORKDIR /opt/tomcat
 
 # Copy the WAR file to the webapps directory
-COPY ./*.recruit-0.0.1-SNAPSHOT /opt/tomcat/webapps
+COPY ./*.recruit-0.0.1-SNAPSHOT.war /opt/tomcat/webapps
 
 # Expose the default Tomcat port
 EXPOSE 8080
